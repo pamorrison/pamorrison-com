@@ -1,6 +1,4 @@
-/*
- ALDSJFASFDLJ   LOCAL FILE LOCAL FILE LOCAL FILE ;LASKJDFKASJD;L
- */
+
 #TOPSECTION {
     position: -webkit-sticky;
     position: sticky;
@@ -59,7 +57,7 @@ body{
         font-size:      125%;
         float:          right;
         text-align:     right;
-        padding:  30px 80px 0px 0px;
+        padding:  29px 80px 0px 0px;
     }
 }
 @media (max-width: 799px) {
