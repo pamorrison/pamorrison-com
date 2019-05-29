@@ -193,7 +193,7 @@ a:hover .leftButton{
         padding: 50px 65px 100px 50px;
         font-size: 110%;
         text-align: justify;
-        line-height: 1.2em;
+        line-height: 1.3em;
     }
 }
 @media (max-width: 799px) {
@@ -202,7 +202,7 @@ a:hover .leftButton{
         padding: 30px 45px 100px 50px;
         font-size: 100%;
         text-align: justify;
-        line-height: 1.2em;
+        line-height: 1.3em;
     }
 }
 
