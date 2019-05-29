@@ -156,7 +156,7 @@ body{
     .leftbar {
         float: left;
         background-color: #B9975B;
-        width: 175px;
+        width: 160px;
         margin: 0px 0px 0px -8px;
     }
 }
@@ -188,7 +188,7 @@ a:hover .leftButton{
 @media (min-width: 800px) {
     .maincontent {
         margin: 0px 0px 0px 255px;
-        padding: 50px 65px 100px 50px;
+        padding: 55px 65px 100px 55px;
         font-size: 110%;
         text-align: justify;
         line-height: 1.4em;
@@ -196,8 +196,9 @@ a:hover .leftButton{
 }
 @media (max-width: 799px) {
     .maincontent {
-        margin: 0px 0px 0px 160px;
-        padding: 30px 45px 100px 50px;
+        min-width: 425px;
+        margin: 0px 0px 0px 150px;
+        padding: 30px 20px 100px 40px;
         font-size: 100%;
         text-align: justify;
         line-height: 1.4em;
