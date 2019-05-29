@@ -1,161 +1,209 @@
+/*
+ ALDSJFASFDLJ   LOCAL FILE LOCAL FILE LOCAL FILE ;LASKJDFKASJD;L
+ */
+#TOPSECTION {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 body{
-    font-family:    "Avenir Next",Avenir,sans-serif;
-    color: darkslategray;
-    background-color: lightgray;
-    background-image: url("../images/background.png");
+    font-family:    Avenir,sans-serif;
+    font-size: small;
+    color: #115740;
+    background-color: #f2f0fa;
+}
+#TopBar {
+    height: 10px;
+    margin: -8px -8px 0px -8px;
+    background-color:   #B9975B;
+    background-image: linear-gradient(to right, #183028, #789F90, #5B6770);
 }
 
-.head {
-    height:                 130px;
-    min-width:              850px;
-    background-image:       url("../images/dragon.jpg");
-    background-attachment:  fixed;
-    background-size:        auto;
-    margin-top:             -10px;
-    margin-left:            -10px;
-    margin-right:           -10px;
-    border-bottom:          dotted 1px #bbbbbb;
-}
-@media (max-width:599px) {
-    .head {
-        min-width: 730px;
-    }
+/* UPPER BANNER */
+.BannerUpper {
+    margin: 0px -8px 0px -8px;
+    min-width: 650px;
+    background-image: linear-gradient(to right, #f2f0fa, #f2f0fa);
 }
 
-#headL {
-    position:       absolute;
-    top:            20px;
-    left:           20px;
-    width:          190px;
-    line-height:    1.3em;
-    padding:        0px 30px 0px 0px;
-    border-right:   3px solid darkslategray;
-    text-align:     right;
-}
-@media (max-width: 599px) {
-    #headL {
-        width: 180px;
-        padding: 0px 20px 0px 0px;
-    }
-}
-
-#headL a:link{
-    color:inherit;
-}
-#headL a:visited{
-    color:inherit;
-}
-
-@media (min-width: 600px){
-    #headM {
-        padding-top:    30px;
-        text-align:     center;
-        line-height:    2.3em;
-    }
-}
-@media (max-width: 599px){
-    #headM {
-        padding-top:    30px;
-        text-align:     center;
-        font-size:      smaller;
-    }
-}
-
-#headM a:link{
-    color: inherit;
-    text-decoration: none;
-}
-#headM a:visited{
-    color: inherit;
-    text-decoration: none;
-}
-
-@media (max-width: 849px) {
-    #headR {
-        font-size:      0em;
-    }
-}
-@media (min-width: 850px) {
-    #headR {
-        position:       absolute;
-        top:            20px;
-        right:          20px;
-        width:          200px;
-        text-align:     right;
-        line-height:    1.3em;
-        padding-left:   20px;
-        border-left:    3px solid darkslategray;
-    }
-    
-}
-#headR a:link{
-    color:inherit;
-}
-#headR a:visited{
-    color:inherit;
-}
-
-#bigname {
+@media (min-width: 800px){
+    #UpLeft {
+        font-family: "Avenir Next", inherit;
+        padding: 20px 0px 15px 80px;
         font-size: 230%;
         font-weight: 700;
     }
-
-#email {
-    font-size:  85%;
+}
+@media (max-width: 799px){
+    #UpLeft {
+        padding: 15px 0px 10px 25px;
+        font-size: 180%;
+        font-weight: 600;
+    }
 }
 
-#sponsors {
-    text-align: left;
+#UpLeft a:link {
+    color: inherit;
+    text-decoration: none;
+}
+#UpLeft a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+#UpLeft a:hover {
+    border-bottom: 4px solid;
 }
 
-.leftbar {
-    float:left;
-    margin: 20px 0px 20px 15px;
-    width:215px;
+@media (min-width: 800px) {
+    #UpRight {
+        font-size:      125%;
+        float:          right;
+        text-align:     right;
+        padding:  30px 80px 0px 0px;
+    }
+}
+@media (max-width: 799px) {
+    #UpRight {
+        font-size:      100%;
+        float: right;
+        padding:  23px 25px 0px 0px;
+    }
+}
+#UpRight a {
+    display: inline-box;
+    margin-right: 12px;
+}
+#git a {
+    margin-right: 0px;
+}
+#UpRight a:link{
+    color:inherit;
+    text-decoration: none;
+}
+#UpRight a:visited{
+    color:inherit;
+    text-decoration: none;
+}
+#UpRight a:hover {
+    border-bottom: 2px solid;
 }
 
-.leftButton{
-    padding: 15px 13px 13px 13px;
-    height: 62px;
-    font-size: 150%;
+/* END OF UPPER BANNER */
+
+
+
+/* LOWER BANNER */
+.BannerLower {
+    color: #f5f5ff;
+    background-color: #789F90;
+    background-image: linear-gradient(to right, #183028, #789F90, #5B6770);
+    padding: 15px 0px 15px 0px;
+    margin: 0px -8px 0px -8px;
+}
+
+@media (min-width: 800px){
+    #LowLeft {
+        padding-left: 79px;
+    }
+}
+@media (max-width: 799px){
+    #LowLeft {
+        font-size: 0em;
+    }
+}
+
+
+@media (min-width: 800px) {
+    #LowRight {
+        float:          right;
+        text-align:     left;
+        padding-right:  80px;
+    }
+}
+@media (max-width: 799px) {
+    #LowRight {
+        font-size:      0em;
+    }
+}
+
+#LowRight a:link{
+    color:inherit;
+    text-decoration: none;
+}
+#LowRight a:visited{
+    color:inherit;
+    text-decoration: none;
+}
+#LowRight a:hover{
+    border-bottom: 2px solid;
+}
+/* END OF LOWER BANNER */
+
+
+#BotBar {
+    height: 7px;
+    margin: 0px -8px 0px -8px;
+    background-color:   #B9975B;
+    background-image: linear-gradient(to right, #B9975B, #F0B323);
+}
+@media (min-width: 800px) {
+    .leftbar {
+        float: left;
+        background-color:#B9975B;
+        width: 250px;
+        margin: 0px 0px 0px -8px;
+    }
+}
+@media (max-width: 799px) {
+    .leftbar {
+        float: left;
+        background-color: #B9975B;
+        width: 175px;
+        margin: 0px 0px 0px -8px;
+    }
+}
+
+
+.leftButton {
+    height: 50px;
+    float:right;
+    padding: 15px 20px 13px 13px;
+    font-size: 130%;
     font-style: italic;
     font-family: Avenir;
-    text-align: center;
-    line-height: 1.2em;
-    width: 187px;
-    border-bottom: 1px solid darkslategray;
-}
-
-.leftButton a:link{
-    color: inherit;
-    text-shadow: 1px 1px;
+    text-align: right;
+    line-height: 1.3em;
+    width: 175px;
     text-decoration: none;
+    color: #115740;
 }
-.leftButton a:link #pdf{
-    text-shadow: .5px .5px;
-}
-.leftButton a:visited{
-    color: inherit;
-    text-decoration: none;
-}
-
-#buttonResume {
-    line-height: .55em;
-    padding-top: 20px;
-    height: 57px;
+@media (max-width: 799px) {
+    .leftButton {
+        width: 125px;
+    }
 }
 
- #pdf {
- font-size: 55%;
- text-shadow: none;
- }
+a:hover .leftButton{
+    background-image: linear-gradient(to right, #B9975B, #F0B323);
+}
 
-.maincontent {
-    margin: 20px 10px 0px 255px;
-    padding: 10px;
-    font-size: 120%;
-    text-align: justify;
-    line-height: 1.2em;
+@media (min-width: 800px) {
+    .maincontent {
+        margin: 0px 0px 0px 255px;
+        padding: 50px 65px 100px 50px;
+        font-size: 110%;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+}
+@media (max-width: 799px) {
+    .maincontent {
+        margin: 0px 0px 0px 160px;
+        padding: 30px 45px 100px 50px;
+        font-size: 100%;
+        text-align: justify;
+        line-height: 1.2em;
+    }
 }
 
 

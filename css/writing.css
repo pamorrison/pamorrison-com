@@ -1,6 +1,5 @@
+
 #buttonWriting {
-    background-image: url("../images/selectedThin.png");
-    background-position: 50%;
-    background-size: 100%;
+    background-image: linear-gradient(to right, #B9975B, #f2f0fa);
 }
 
