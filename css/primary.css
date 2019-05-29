@@ -11,6 +11,7 @@ body{
     background-color: #f2f0fa;
 }
 #TopBar {
+    min-width: 575px;
     height: 10px;
     margin: -8px -8px 0px -8px;
     background-color:   #B9975B;
@@ -20,7 +21,7 @@ body{
 /* UPPER BANNER */
 .BannerUpper {
     margin: 0px -8px 0px -8px;
-    min-width: 650px;
+    min-width: 575px;
     background-image: linear-gradient(to right, #f2f0fa, #f2f0fa);
 }
 
@@ -92,6 +93,7 @@ body{
 
 /* LOWER BANNER */
 .BannerLower {
+    min-width: 575px;
     color: #f5f5ff;
     background-color: #789F90;
     background-image: linear-gradient(to right, #183028, #789F90, #5B6770);
@@ -139,6 +141,7 @@ body{
 
 
 #BotBar {
+    min-width: 575px;
     height: 7px;
     margin: 0px -8px 0px -8px;
     background-color:   #B9975B;
@@ -196,7 +199,7 @@ a:hover .leftButton{
 }
 @media (max-width: 799px) {
     .maincontent {
-        min-width: 425px;
+        min-width: 350px;
         margin: 0px 0px 0px 150px;
         padding: 30px 20px 100px 40px;
         font-size: 100%;
