@@ -31,6 +31,9 @@ body{
         padding: 20px 0px 15px 80px;
         font-size: 230%;
         font-weight: 700;
+        border-bottom: 4px solid #f2f0fa;
+        -webkit-transition: border-bottom ease .25s;
+        transition: border-bottom ease .25s;
     }
 }
 @media (max-width: 799px){
