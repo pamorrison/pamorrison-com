@@ -32,8 +32,6 @@ body{
         font-size: 230%;
         font-weight: 700;
         border-bottom: 4px solid #f2f0fa;
-        -webkit-transition: border-bottom ease .25s;
-        transition: border-bottom ease .25s;
     }
 }
 @media (max-width: 799px){
@@ -51,6 +49,11 @@ body{
 #UpLeft a:visited {
     color: inherit;
     text-decoration: none;
+}
+#UpLeft a {
+    border-bottom: 4px solid #f2f0fa;
+    -webkit-transition: border-bottom ease .25s;
+    transition: border-bottom ease .2s;
 }
 #UpLeft a:hover {
     border-bottom: 4px solid;
