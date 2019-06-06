@@ -4,70 +4,118 @@
     <head>
         <title>Paul A. Morrison</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
         <link href="css/primary.css" rel="stylesheet" media="screen">
-        <link href="css/intro.css" rel="stylesheet">
+        <link href="css/intro.css" rel="stylesheet" media="screen">
     </head>
     
-    <body>
-    <div id="TOPSECTION">
-        <div id="TopBar"> </div>
-        <div class="Banner">
-            <div class="BannerUpper">
-                <div id="UpRight">
-                    <a href="mailto:pamorrison@email.wm.edu">W&amp;M email</a>
-                    <a href="mailto:devopablo@gmail.com">Gmail</a>
-                    <a href="https://www.facebook.com/devopablo">Facebook</a>
-                    <span id="git"><a href="https://https://github.com/pamorrison">GitHub</a></span>
+    <body id="Top">
+        <div id="Header">
+            <div id="TopBar"> </div>
+            <div class="Banner">
+                <div class="BannerUpper">
+                    <div id="UpRight">
+                        <a href="mailto:pamorrison@email.wm.edu">W&amp;M email</a>
+                        <a href="mailto:devopablo@gmail.com">Gmail</a>
+                        <a href="https://www.facebook.com/devopablo">Facebook</a>
+                        <span id="git"><a href="https://https://github.com/pamorrison">GitHub</a></span>
+                    </div>
+                    <span id="UpLeft">
+                        <a href="">Paul A. Morrison</a>
+                    </span>
                 </div>
-                <div id="UpLeft">
-                    <a href="pamorrison.com">Paul A. Morrison</a>
+                <div class="BannerLower">
+                    <div id="LowRight">
+                        <a href="https://brand.wm.edu/index.php/university-colors/">Palette: W&amp;M School Colors</a>
+                    </div>
+                    <div id="LowLeft">
+                        &nbsp;A website, submitted for your approval.
+                    </div>
                 </div>
             </div>
-            <div class="BannerLower">
-                <div id="LowRight">
-                    <a href="https://brand.wm.edu/index.php/university-colors/">Palette: W&amp;M School Colors</a>
-                </div>
-                <div id="LowLeft">
-                    &nbsp;A website, submitted for your approval.
-                </div>
-            </div>
+            <div id="BotBar"> </div>
         </div>
-        <div id="BotBar"> </div>
-    </div>
         
-        <div class="leftbar">
+        <div class="LeftBar">
             
-            
-            <div id="buttonIntro" class="leftButton">
-                A Quick Word
+            <div id="Active">
+            Welcome
             </div>
             
             <a href="resume">
-            <div id="buttonResume" class="leftButton">
-            Resume/C.V.</div></a>
+            <div class="LeftButton">
+            <span class="ButtonSpan">Resume</span></div></a>
             
-            <a href="writing">
-            <div id="buttonWriting" class="leftButton">
-            Writings</div></a>
+            <a href="academic">
+            <div class="LeftButton">
+            <span class="ButtonSpan">Academic</span></div></a>
             
-            <a href="code">
-            <div id="buttonCode" class="leftButton">
-            Code Dump</div></a>
+            <a href="projects">
+            <div class="LeftButton">
+            <span class="ButtonSpan">Projects</span></div></a>
             
             <a href="secret">
-            <div id="buttonSecret" class="leftButton">
-            Secret Lair</div></a>
+            <div class="LeftButton">
+            <span class="ButtonSpan">Secret</span></div></a>
             
         </div>
         
-        <div class="maincontent">
-            Hello and welcome! My name is Paul Alan Morrison. I am a student at The College of William &amp; Mary, and I am studying primarily Mathematics and Computer Science.<br><br>
-            To the left you'll find a few areas with various work that I've done, mostly for school projects and assignments.<br><br>
-            The Resume/C.V. section has no surprises. Click there to see what I show employers, and feel free to download and steal the design if you like it.<br><br>
-            In Writings, you'll find a bunch of papers and writeups I've done for both Humanities and Computer Science courses. Be warned: some of them have, shall we say, questionable design.<br><br>
-            The Code Dump section is a place online I've decided to share most of the code I've ever written. The bulk of it is written in C/C++, a decent amount is written in Python, and the rest varies.<br><br>
-            Don't click the last section. You're not allowed there.
+        <div id="MainContent">
+            <h1>Hello and welcome to my website!</h1>
+            <div style="margin-bottom: 40px;">
+                <div style="float:left;"><img src="images/me.jpg" alt="Me!" id="Me"></div>
+                <p style="line-height:1.5em;">My name is Paul Morrison. I am an undergraduate Senior at The College of William &amp; Mary, and I am studying primarily Mathematics and Computer Science. This site is a collection of things I've created, things I know, and things to know about me, and I built it from scratch with a lot of love. To the left you'll find areas of the site to explore. Below you'll find a summary of those areas and a bit of my personal story. Up top you'll see some contact info, and you can find the repository for this site at the GitHub link. Feel free to explore there too or contact me via email or Facebook if you'd like to chat. Thanks for stopping by!</p></div>
+            <h2>Mind the Sidebar</h2>
+            <ul style="list-style-type:none;margin-bottom: 40px">
+                <li><span style="font-style:italic;font-size:115%">Resume</span> - Check out this area if you're a potential employer, or if you'd like to see what I show potential employers. You'll find summaries of my education, skillset, and technical work history. You know, the standard stuff. There are .pdf copies of my resume with different designs/color themes.</li>
+                <li><span style="font-style:italic;font-size:115%;display:inline-block;padding-top:10px;">Academic</span> - In here you'll find papers I've written for various courses. The length and content from piece to piece varies a lot. It's not an exhaustive list, but it's a good representation of my writing style and ability.</li>
+                <li><span style="font-style:italic;font-size:115%;display:inline-block;padding-top:10px;">Projects</span> - The Projects area comprises descriptions of projects I've worked on (including this website!) of varying types, both for school and just because. If it's here, it's something for which I'm particularly proud of the content, presentation, documentation, or creative process, or some combination of these.</li>
+                <li><span style="font-style:italic;font-size:115%;display:inline-block;padding-top:10px;">Secret</span> - This is a secret. Don't go in there and don't tell anybody about it.</li>
+            </ul>
+            <h2>A short bio</h2>
+            <p>I currently reside in Williamsburg, VA, but I was born and raised in Texas, and I lived there until late 2014.</p>
+            <p>After I graduated high school, I spent a few years bouncing around jobs. I had a bit of consistency on the job front, as I had a few tech jobs but mostly food industry stuff, like grocery stores and pizza chains. I landed at Pizza Hut when I was 21, where I stayed for a long time.</p>
+            <p>After working for Pizza Hut for about 10 years, I went into restaurant management and spent close to a year and a half living pretty successfully. However, I burned out on that eventually and ended up quitting pretty unceremoniously. I worked as a waiter for a few different restaurants after that, without much inspiration or direction.</p>
+            <p>However, I cleaned up my act and moved out to Virginia to start over and give my education a real shot. I started at Thomas Nelson Community College in the spring of 2015 and after 2 1/2 years with a 4.0, I got an Associate's Degree with a specialization in Computer Science. During my time there, I began tutoring and realized that I loved teaching and math, so I decided to focus on those. I applied to only two 4-year schools, Christopher Newport University, and The College of William &amp; Mary, and the latter decided I should get a healthy financial aid package, so I accepted and started there in the Fall of 2017.</p>
+            <p>Since then I have become really passionate about Computer Science, and my intention is to enter W&amp;M's graduate school to obtain a Master's Degree in Computer Science. I'm still a math major as of now, and I enjoy the subject, but my interests have both broadened and deepened in the last year. In the future, I would like to work for N.A.S.A. before I go into education, and I was recently hired by SAIC to do exactly that, so that's the plan for the near-term. Thanks for indulging me, and I genuinely hope you're having a great day!</p>
         </div>
 
+        <div id="Footer">
+            <div id="FooterStrip">
+            </div>
+            <div>
+                <div id="FootRight">
+                    <div id="Friends">Friends &amp; Unofficial Sponsors:
+                    </div>
+                    <p>
+                        <a href="https://theycallmezeal.me"><img src="images/theycallmezeal.png" style="height: 40px"></a>&nbsp;
+                        <a href="http://zombo.com"><img src="images/zombocom.jpg" style="height: 40px"></a>&nbsp;
+                        <a href="https://mddayrit.weebly.com/"><img src="images/marc.png" style="height: 40px"></a>
+                    </p>
+                    <p>
+                        <a href="https://csgw.com"><img src="https://img1.wsimg.com/isteam/ip/611c6cfe-9641-4aef-a5fa-1c304346f90c/logo/a05930ab-0d28-4db6-af21-489683c70d78.tif/:/rs=h:100" style="height: 40px;"></a>&nbsp;
+                        <a href="https://jackbowden.me"><img src="images/jb.ico" style="height: 40px"></a>
+                    </p>
+                </div>
+            
+                <div id="FootLeft">
+                    <div style="float:left;margin: 15px 0 5px 20px;">
+                        <a href="https://www.wm.edu"><img src="images/wmlogo.png" style="width:80px"></a>
+                    </div>
+                    <div style="margin: 15px 0 5px 120px;">
+                        <a href="https://www.tncc.edu"><img src="https://tncc.edu/sites/all/themes/tncc2014/images/thomas_nelson_vlogo.svg" style="width:105px;opacity:.85;"></a>
+                    </div>
+                </div>
+
+                
+                <div id="CopyrightContainer">
+                    <a href="#Top">
+                        <span id="ToTheTop">Back to Top</span>
+                    </a>
+                    
+                    <span id="Copyright">All Rights Reserved <span style="font-size:100%">©</span> 2019</span>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

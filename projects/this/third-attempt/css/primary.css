@@ -1,0 +1,211 @@
+
+#TOPSECTION {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+body{
+    font-family:    Avenir,sans-serif;
+    font-size: small;
+    color: #115740;
+    background-color: #f2f0fa;
+}
+#TopBar {
+    min-width: 575px;
+    height: 10px;
+    margin: -8px -8px 0px -8px;
+    background-color:   #B9975B;
+    background-image: linear-gradient(to right, #183028, #789F90, #5B6770);
+}
+
+/* UPPER BANNER */
+.BannerUpper {
+    margin: 0px -8px 0px -8px;
+    min-width: 575px;
+    background-image: linear-gradient(to right, #f2f0fa, #f2f0fa);
+}
+
+@media (min-width: 800px){
+    #UpLeft {
+        font-family: "Avenir Next", inherit;
+        padding: 20px 0px 15px 80px;
+        font-size: 230%;
+        font-weight: 700;
+    }
+}
+@media (max-width: 799px){
+    #UpLeft {
+        padding: 15px 0px 10px 25px;
+        font-size: 180%;
+        font-weight: 600;
+    }
+}
+
+#UpLeft a:link {
+    color: inherit;
+    text-decoration: none;
+}
+#UpLeft a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+#UpLeft a:hover {
+    border-bottom: 4px solid;
+}
+
+@media (min-width: 800px) {
+    #UpRight {
+        font-size:      125%;
+        float:          right;
+        text-align:     right;
+        padding:  29px 80px 0px 0px;
+    }
+}
+@media (max-width: 799px) {
+    #UpRight {
+        font-size:      100%;
+        float: right;
+        padding:  23px 25px 0px 0px;
+    }
+}
+#UpRight a {
+    display: inline-box;
+    margin-right: 12px;
+}
+#git a {
+    margin-right: 0px;
+}
+#UpRight a:link{
+    color:inherit;
+    text-decoration: none;
+}
+#UpRight a:visited{
+    color:inherit;
+    text-decoration: none;
+}
+#UpRight a:hover {
+    border-bottom: 2px solid;
+}
+
+/* END OF UPPER BANNER */
+
+
+
+/* LOWER BANNER */
+.BannerLower {
+    min-width: 575px;
+    color: #f5f5ff;
+    background-color: #789F90;
+    background-image: linear-gradient(to right, #183028, #789F90, #5B6770);
+    padding: 15px 0px 15px 0px;
+    margin: 0px -8px 0px -8px;
+}
+
+@media (min-width: 800px){
+    #LowLeft {
+        padding-left: 79px;
+    }
+}
+@media (max-width: 799px){
+    #LowLeft {
+        font-size: 0em;
+    }
+}
+
+
+@media (min-width: 800px) {
+    #LowRight {
+        float:          right;
+        text-align:     left;
+        padding-right:  80px;
+    }
+}
+@media (max-width: 799px) {
+    #LowRight {
+        font-size:      0em;
+    }
+}
+
+#LowRight a:link{
+    color:inherit;
+    text-decoration: none;
+}
+#LowRight a:visited{
+    color:inherit;
+    text-decoration: none;
+}
+#LowRight a:hover{
+    border-bottom: 2px solid;
+}
+/* END OF LOWER BANNER */
+
+
+#BotBar {
+    min-width: 575px;
+    height: 7px;
+    margin: 0px -8px 0px -8px;
+    background-color:   #B9975B;
+    background-image: linear-gradient(to right, #B9975B, #F0B323);
+}
+@media (min-width: 800px) {
+    .leftbar {
+        float: left;
+        background-color:#B9975B;
+        width: 250px;
+        margin: 0px 0px 0px -8px;
+    }
+}
+@media (max-width: 799px) {
+    .leftbar {
+        float: left;
+        background-color: #B9975B;
+        width: 160px;
+        margin: 0px 0px 0px -8px;
+    }
+}
+
+
+.leftButton {
+    height: 50px;
+    float:right;
+    padding: 15px 20px 13px 13px;
+    font-size: 130%;
+    font-style: italic;
+    font-family: Avenir;
+    text-align: right;
+    line-height: 1.3em;
+    width: 175px;
+    text-decoration: none;
+    color: #115740;
+}
+@media (max-width: 799px) {
+    .leftButton {
+        width: 125px;
+    }
+}
+
+a:hover .leftButton{
+    background-image: linear-gradient(to right, #B9975B, #F0B323);
+}
+
+@media (min-width: 800px) {
+    .maincontent {
+        margin: 0px 0px 0px 255px;
+        padding: 55px 65px 100px 55px;
+        font-size: 110%;
+        text-align: justify;
+        line-height: 1.4em;
+    }
+}
+@media (max-width: 799px) {
+    .maincontent {
+        min-width: 350px;
+        margin: 0px 0px 0px 150px;
+        padding: 30px 20px 100px 40px;
+        font-size: 100%;
+        text-align: justify;
+        line-height: 1.4em;
+    }
+}
+
+

@@ -1,0 +1,39 @@
+.CoveBorderMaker {
+    padding: 1%;
+    border: solid 7px #f2f0fa;
+    border-radius: 35px;
+    -webkit-transition: border ease .25s;
+    transition: border ease .25s;
+}
+.CoveBorderMaker:hover {
+    border: solid 7px #F0B323;
+
+}
+
+.CoveImgContainer {
+    width: 96.4%;
+    padding: 2.5% 1.8% 2.5% 1.8%;
+    border-radius: 25px;
+    background-image: radial-gradient(#789F90,#115740,#789F90,#115740,#115740);
+    -webkit-transition: border ease .25s;
+    transition: border ease .25s;
+}
+.CoveImgContainer:hover {
+}
+.CoveImgBucket {
+    width: 98%;
+    margin-left: 1%;
+}
+.CoveImgBucket a img {
+    width: 31.3%;
+}
+.CoveImgSeparator {
+    display: inline-block;
+    width: 3%;
+}
+.CoveTopRow, .CoveBotRow{
+    margin-bottom: -6px;
+}
+.CoveBotRow {
+    margin-top: 2.5%;
+}

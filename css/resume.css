@@ -1,3 +1,47 @@
-#buttonResume {
-    background-image: linear-gradient(to right, #B9975B, #f2f0fa);
+
+
+#ResTopBar {
+    height: 50px;
+    background-image: linear-gradient(#186049, #115740);
+    border-radius: 20px 20px 0 0;
+    margin-bottom: -1px;
 }
+
+.ResContainer {
+    text-align: center;
+    font-size: 160%;
+    color: #f2f0fa;
+    font-weight: bold;
+    margin: 0 15px 0 15px;
+}
+
+.ResInline {
+    display: inline-block;
+    width: 100%;
+}
+.ResInlineText {
+    display: inline-block;
+    height: 35px;
+}
+.ResImg {
+    width: 95%;
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 1mm;
+    -webkit-transition: border ease-in-out .2s;
+    transition: border ease-in-out .2s;
+}
+.ResImg:hover{
+    border: 5px solid #F0B323;
+}
+
+.ResMidBar {
+    height: 60px;
+    background-image: linear-gradient(#115740, #1a6049, #115740);
+}
+#ResBotBar {
+    height: 50px;
+    background-image: linear-gradient(#115740, #186049);
+    border-radius: 0 0 20px 20px;
+}
+

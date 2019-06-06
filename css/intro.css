@@ -1,4 +1,17 @@
-#buttonIntro {
-    background-image: linear-gradient(to right, #B9975B, #f2f0fa);
-}
 
+ul li {
+    padding-bottom: 10px;
+}
+#Me {
+    width:157px;
+    display:inline-box;
+    margin: 6px 16px 0 0;
+    border: solid 2px #B9975B;
+    border-radius: 20px 0 0 0;
+}
+@media (max-width: 899px) {
+    #Me {
+        border-radius: 15px 0 0 0;
+        width: 122px;
+    }
+}

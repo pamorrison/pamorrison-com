@@ -1,0 +1,2353 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+    <title>Algorithms: Problems and Solutions 1</title>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link href="../../css/primary.css" rel="stylesheet" media="screen">
+<link href="../../css/academic.css" rel="stylesheet">
+<link rel=File-List href="Homework%20Assignment%202%20(html).fld/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Morrison, Paul</o:Author>
+  <o:LastAuthor>Morrison, Paul</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>737</o:TotalTime>
+  <o:LastPrinted>2019-03-01T03:38:00Z</o:LastPrinted>
+  <o:Created>2019-06-01T17:04:00Z</o:Created>
+  <o:LastSaved>2019-06-01T17:04:00Z</o:LastSaved>
+  <o:Pages>12</o:Pages>
+  <o:Words>2731</o:Words>
+  <o:Characters>14179</o:Characters>
+  <o:Lines>236</o:Lines>
+  <o:Paragraphs>19</o:Paragraphs>
+  <o:CharactersWithSpaces>16891</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="Homework%20Assignment%202%20(html).fld/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Homework%20Assignment%202%20(html).fld/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>AR-SA</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:ApplyBreakingRules/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:等线;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"DengXian Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:0pt;
+	mso-fareast-language:ZH-CN;
+	font-weight:normal;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-fareast-language:ZH-CN;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"DengXian Light";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:DengXian;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("Homework%20Assignment%202%20\(html\).fld/header.html") fs;
+	mso-footnote-continuation-separator:url("Homework%20Assignment%202%20\(html\).fld/header.html") fcs;
+	mso-endnote-separator:url("Homework%20Assignment%202%20\(html\).fld/header.html") es;
+	mso-endnote-continuation-separator:url("Homework%20Assignment%202%20\(html\).fld/header.html") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-header:url("Homework%20Assignment%202%20\(html\).fld/header.html") h1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:472254825;
+	mso-list-type:hybrid;
+	mso-list-template-ids:404358438 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:45.0pt;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:81.0pt;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:117.0pt;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:153.0pt;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:225.0pt;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:261.0pt;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:297.0pt;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:333.0pt;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:611984368;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1132547218 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:632097425;
+	mso-list-type:hybrid;
+	mso-list-template-ids:404358438 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:45.0pt;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:81.0pt;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:117.0pt;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:153.0pt;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:225.0pt;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:261.0pt;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:297.0pt;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:333.0pt;
+	text-indent:-9.0pt;}
+@list l3
+	{mso-list-id:935360078;
+	mso-list-template-ids:-731985758;}
+@list l3:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:974141766;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-269841306 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:45.0pt;
+	text-indent:-.25in;}
+@list l4:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:81.0pt;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:117.0pt;
+	text-indent:-9.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:153.0pt;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:225.0pt;
+	text-indent:-9.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:261.0pt;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:297.0pt;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:333.0pt;
+	text-indent:-9.0pt;}
+@list l5
+	{mso-list-id:1457408974;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1027841492 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:45.0pt;
+	text-indent:-.25in;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:81.0pt;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:117.0pt;
+	text-indent:-9.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:153.0pt;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:189.0pt;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:225.0pt;
+	text-indent:-9.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:261.0pt;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:297.0pt;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:333.0pt;
+	text-indent:-9.0pt;}
+@list l6
+	{mso-list-id:1471285427;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-897041716 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l6:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l6:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l6:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+table.MsoTable15Grid2
+	{mso-style-name:"Grid Table 2";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	border-top:solid #666666 1.0pt;
+	mso-border-top-themecolor:text1;
+	mso-border-top-themetint:153;
+	border-left:none;
+	border-bottom:solid #666666 1.0pt;
+	mso-border-bottom-themecolor:text1;
+	mso-border-bottom-themetint:153;
+	border-right:none;
+	mso-border-top-alt:solid #666666 .25pt;
+	mso-border-top-themecolor:text1;
+	mso-border-top-themetint:153;
+	mso-border-bottom-alt:solid #666666 .25pt;
+	mso-border-bottom-themecolor:text1;
+	mso-border-bottom-themetint:153;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.25pt solid #666666;
+	mso-border-insideh-themecolor:text1;
+	mso-border-insideh-themetint:153;
+	mso-border-insidev:.25pt solid #666666;
+	mso-border-insidev-themecolor:text1;
+	mso-border-insidev-themetint:153;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+table.MsoTable15Grid2FirstRow
+	{mso-style-name:"Grid Table 2";
+	mso-table-condition:first-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;
+	mso-tstyle-border-top:cell-none;
+	mso-tstyle-border-bottom:1.5pt solid #666666;
+	mso-tstyle-border-bottom-themecolor:text1;
+	mso-tstyle-border-bottom-themetint:153;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2LastRow
+	{mso-style-name:"Grid Table 2";
+	mso-table-condition:last-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;
+	mso-tstyle-border-top:.75pt double #666666;
+	mso-tstyle-border-top-themecolor:text1;
+	mso-tstyle-border-top-themetint:153;
+	mso-tstyle-border-bottom:cell-none;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2FirstCol
+	{mso-style-name:"Grid Table 2";
+	mso-table-condition:first-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2LastCol
+	{mso-style-name:"Grid Table 2";
+	mso-table-condition:last-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2OddColumn
+	{mso-style-name:"Grid Table 2";
+	mso-table-condition:odd-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#CCCCCC;
+	mso-tstyle-shading-themecolor:text1;
+	mso-tstyle-shading-themetint:51;}
+table.MsoTable15Grid2OddRow
+	{mso-style-name:"Grid Table 2";
+	mso-table-condition:odd-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#CCCCCC;
+	mso-tstyle-shading-themecolor:text1;
+	mso-tstyle-shading-themetint:51;}
+table.MsoTable15Grid2Accent1
+	{mso-style-name:"Grid Table 2 - Accent 1";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	border-top:solid #8EAADB 1.0pt;
+	mso-border-top-themecolor:accent1;
+	mso-border-top-themetint:153;
+	border-left:none;
+	border-bottom:solid #8EAADB 1.0pt;
+	mso-border-bottom-themecolor:accent1;
+	mso-border-bottom-themetint:153;
+	border-right:none;
+	mso-border-top-alt:solid #8EAADB .25pt;
+	mso-border-top-themecolor:accent1;
+	mso-border-top-themetint:153;
+	mso-border-bottom-alt:solid #8EAADB .25pt;
+	mso-border-bottom-themecolor:accent1;
+	mso-border-bottom-themetint:153;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.25pt solid #8EAADB;
+	mso-border-insideh-themecolor:accent1;
+	mso-border-insideh-themetint:153;
+	mso-border-insidev:.25pt solid #8EAADB;
+	mso-border-insidev-themecolor:accent1;
+	mso-border-insidev-themetint:153;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+table.MsoTable15Grid2Accent1FirstRow
+	{mso-style-name:"Grid Table 2 - Accent 1";
+	mso-table-condition:first-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;
+	mso-tstyle-border-top:cell-none;
+	mso-tstyle-border-bottom:1.5pt solid #8EAADB;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-bottom-themetint:153;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2Accent1LastRow
+	{mso-style-name:"Grid Table 2 - Accent 1";
+	mso-table-condition:last-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;
+	mso-tstyle-border-top:.75pt double #8EAADB;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-top-themetint:153;
+	mso-tstyle-border-bottom:cell-none;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2Accent1FirstCol
+	{mso-style-name:"Grid Table 2 - Accent 1";
+	mso-table-condition:first-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2Accent1LastCol
+	{mso-style-name:"Grid Table 2 - Accent 1";
+	mso-table-condition:last-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2Accent1OddColumn
+	{mso-style-name:"Grid Table 2 - Accent 1";
+	mso-table-condition:odd-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#D9E2F3;
+	mso-tstyle-shading-themecolor:accent1;
+	mso-tstyle-shading-themetint:51;}
+table.MsoTable15Grid2Accent1OddRow
+	{mso-style-name:"Grid Table 2 - Accent 1";
+	mso-table-condition:odd-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#D9E2F3;
+	mso-tstyle-shading-themecolor:accent1;
+	mso-tstyle-shading-themetint:51;}
+table.MsoTable15Grid2Accent3
+	{mso-style-name:"Grid Table 2 - Accent 3";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	border-top:solid #C9C9C9 1.0pt;
+	mso-border-top-themecolor:accent3;
+	mso-border-top-themetint:153;
+	border-left:none;
+	border-bottom:solid #C9C9C9 1.0pt;
+	mso-border-bottom-themecolor:accent3;
+	mso-border-bottom-themetint:153;
+	border-right:none;
+	mso-border-top-alt:solid #C9C9C9 .25pt;
+	mso-border-top-themecolor:accent3;
+	mso-border-top-themetint:153;
+	mso-border-bottom-alt:solid #C9C9C9 .25pt;
+	mso-border-bottom-themecolor:accent3;
+	mso-border-bottom-themetint:153;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.25pt solid #C9C9C9;
+	mso-border-insideh-themecolor:accent3;
+	mso-border-insideh-themetint:153;
+	mso-border-insidev:.25pt solid #C9C9C9;
+	mso-border-insidev-themecolor:accent3;
+	mso-border-insidev-themetint:153;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Arial;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:ZH-CN;}
+table.MsoTable15Grid2Accent3FirstRow
+	{mso-style-name:"Grid Table 2 - Accent 3";
+	mso-table-condition:first-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;
+	mso-tstyle-border-top:cell-none;
+	mso-tstyle-border-bottom:1.5pt solid #C9C9C9;
+	mso-tstyle-border-bottom-themecolor:accent3;
+	mso-tstyle-border-bottom-themetint:153;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2Accent3LastRow
+	{mso-style-name:"Grid Table 2 - Accent 3";
+	mso-table-condition:last-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:white;
+	mso-tstyle-shading-themecolor:background1;
+	mso-tstyle-border-top:.75pt double #C9C9C9;
+	mso-tstyle-border-top-themecolor:accent3;
+	mso-tstyle-border-top-themetint:153;
+	mso-tstyle-border-bottom:cell-none;
+	mso-tstyle-border-insideh:cell-none;
+	mso-tstyle-border-insidev:cell-none;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2Accent3FirstCol
+	{mso-style-name:"Grid Table 2 - Accent 3";
+	mso-table-condition:first-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2Accent3LastCol
+	{mso-style-name:"Grid Table 2 - Accent 3";
+	mso-table-condition:last-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTable15Grid2Accent3OddColumn
+	{mso-style-name:"Grid Table 2 - Accent 3";
+	mso-table-condition:odd-column;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#EDEDED;
+	mso-tstyle-shading-themecolor:accent3;
+	mso-tstyle-shading-themetint:51;}
+table.MsoTable15Grid2Accent3OddRow
+	{mso-style-name:"Grid Table 2 - Accent 3";
+	mso-table-condition:odd-row;
+	mso-style-priority:47;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#EDEDED;
+	mso-tstyle-shading-themecolor:accent3;
+	mso-tstyle-shading-themetint:51;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in' id="Top">
+
+    <div id="Header">
+        <div id="TopBar"> </div>
+        <div class="Banner">
+            <div class="BannerUpper">
+                <div id="UpRight">
+                    <a href="mailto:pamorrison@email.wm.edu">W&amp;M email</a>
+                    <a href="mailto:devopablo@gmail.com">Gmail</a>
+                    <a href="https://www.facebook.com/devopablo">Facebook</a>
+                    <span id="git"><a href="https://https://github.com/pamorrison">GitHub</a></span>
+                </div>
+                <div id="UpLeft">
+                    <a href="../..">Paul A. Morrison</a>
+                </div>
+            </div>
+            <div class="BannerLower">
+                <div id="LowRight">
+                    <a href="https://brand.wm.edu/index.php/university-colors/">Palette: W&amp;M School Colors</a>
+                </div>
+                <div id="LowLeft">
+                    &nbsp;A website, submitted for your approval.
+                </div>
+            </div>
+        </div>
+        <div id="BotBar"> </div>
+        <div style="margin-left: -10px;width: 65px;height: 45px;">
+            <a href="..#Algorithms1" id="AcadLink">
+                <div id="BackToAcademic">
+                    <span id="BackToAcademicText">&#8678;&nbsp; Back to Academic</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.0in;
+margin-bottom:12.0pt;margin-left:.5in;text-align:center;line-height:115%'><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.0in;
+margin-bottom:12.0pt;margin-left:.5in;text-align:center;line-height:115%'><span
+style='font-size:18.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Computer Science Algorithms:
+Problems and Solutions 1</span><span lang=EN style='font-size:18.0pt;
+line-height:115%;font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;
+color:#183028;mso-ansi-language:EN'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Explain how to solve the
+following two problems using heaps.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>a) First, give an <i>O (n log
+k)</i> algorithm to merge <i>k</i> sorted lists with <i>n</i> total elements
+into one sorted list.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'><span style='mso-tab-count:
+1'>         </span>Algorithm:<o:p></o:p></span></b></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>1. Assign to
+each sorted list a marker such that there are <i>k</i> values (list markers) to
+pair with keys (list elements) from each list. (<i>k</i> steps)<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>2. For each
+of the <i>k</i> sorted lists, remove the first/least element, create a
+key/value pair using the marker from step 1, and put it into a min heap
+structure (<i>k</i> steps), <i>Q</i> (stored as a list, so that each insertion
+occurs at the end), allowing every insertion to obey the heap ordering rule and
+each item to “bubble up” if necessary. At the end of this initial process, there
+exists a min heap of size <i>k</i> (~<i>k*</i>log <i>k</i> additional steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>3. Create an
+empty list <i>L</i> in which to store the list elements obtained and removed
+from <i>Q</i> (constant).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>4. <u>While <i>Q</i>
+is non–empty:</u> Remove <i>Q</i>’s root (extract min, ~log <i>k</i>), store
+the value (original list marker) in a temporary variable <i>t</i>, and insert the
+key (original list element) at the <u>end</u> of <i>L</i> (constant). Afterward,
+derive the next key/value pair from the next element in list <i>t</i>, <u>if
+list <i>t</i> is non–empty</u>, and insert it into the heap such that the new
+root’s “key” becomes the least element out of all elements in all lists (~log <i>k</i>).
+Skip the insertion if list <i>t</i> is empty. Start over at step 4 (total of <i>n
+</i>– k steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>5. When <i>Q</i>
+becomes empty, we are left with <i>L</i>, a sorted list of all <b><i>n</i></b>
+elements.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Explanation:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>With a little bit more prep
+work than just relying on a min heap to give us an ordering, specifically by
+“tagging” elements with an original list identity, we have eliminated the need
+to hunt for a specific list element to insert into the heap, instead allowing
+the removed root to always tell us where to go get a new element. Summing the
+bounds across all steps we have:<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.0in;
+margin-bottom:12.0pt;margin-left:1.0in;text-align:center;line-height:115%'><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028;mso-ansi-language:PT-BR'><span
+style='mso-spacerun:yes'> </span><i><span lang=PT-BR>O</span></i><span
+lang=PT-BR>(<i>k</i>) + <i>O</i>(<i>k</i>) + <span class=GramE><i>O</i>(</span><span
+class=SpellE><i>k</i>log</span> <i>k</i>) + <i>O</i>(1) + <i>O</i>(2(<i>n – k</i>)log
+<i>k</i>) = <i>O</i>(<i>k</i> + <i>k</i> + 1 + ­­­<i> <span class=SpellE>k<span
+style='font-style:normal'>log</span></span></i> <i>k</i> +<span
+style='mso-spacerun:yes'>  </span>2(<i>n – k</i>)log <i>k</i>)<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.0in;
+margin-bottom:12.0pt;margin-left:1.0in;text-align:center;line-height:115%'><span
+lang=PT-BR style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028;mso-ansi-language:PT-BR'>≈ <span
+class=GramE><i>O</i>(</span><i>n</i> log <i>k</i>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>In this case, we can treat <i>k</i>
+as a constant for determining the running time, because given a particular <i>n</i>,
+for increasing <i>k</i>, the running time of steps 1 and 2 increase while step
+4 decreases, so we end up with a running time that is primarily determined by
+the total number of elements, rather than how many lists they’re divided into.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>b) Second, say that a list of
+numbers is <i>k</i> – close to sorted if each number in the list is less than <i>k</i>
+positions from its actual place in the sorted order. Give an <i>O </i>(<i>n</i>
+log <i>k </i>) algorithm for sorting a list of <i>n</i> numbers that is <i>k</i>
+– close to sorted.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Algorithm:<o:p></o:p></span></b></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>1. Begin by
+removing <i>k</i>+1 <span class=GramE>elements</span> (<i>k</i>+1 steps) from
+the list and inserting them into a min–heap structure (<i>k</i>+1 steps), <i>Q</i>,
+allowing the heap properties to “sort” these elements (~log <i>k</i> per
+element).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;line-height:115%'><span style='font-size:14.0pt;
+line-height:115%;font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;
+color:#183028'>2. Create an empty list <i>L</i> for output (constant).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>3. <u>While <i>Q</i>
+is non–empty:</u> Remove an element from <i>Q</i> (extract min, ~log <i>k</i>) and
+place it at the end of <i>L</i>. Insert the next element of the original list into
+the heap (~log <i>k</i>). Repeat step 3 (total of <i>n </i>– <i>k </i>– 1
+steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>4. After <i>Q</i>
+is empty, we have <i>L</i>, a sorted list of <i>n</i> elements.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Explanation:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>The sorting comes almost
+entirely from simply using a min–heap structure, allowing it to produce least
+elements. By starting with a valid min–heap at the beginning with <i>k </i>+ 1
+elements, the first iteration of the heap is guaranteed to have at least the
+first <i>k </i>elements correctly sorted, since the first element in the final
+sorted list is only <i>k </i>positions away from its correct position. Summing
+the bounds across all algorithm steps, we have<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.0in;
+margin-bottom:12.0pt;margin-left:1.0in;text-align:center;line-height:115%'><span
+class=GramE><i><span lang=PT-BR style='font-size:14.0pt;line-height:115%;
+font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028;
+mso-ansi-language:PT-BR'>O</span></i><span lang=PT-BR style='font-size:14.0pt;
+line-height:115%;font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;
+color:#183028;mso-ansi-language:PT-BR'>(</span></span><span lang=PT-BR
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028;mso-ansi-language:PT-BR'>(2<i>k </i>+
+2)log <i>k</i>)<i> </i>+ <i>O</i>(1) + <i>O</i>(2(<i>n </i>– <i>k </i>– 1)log <i>k</i>))
+= <i>O</i>((2<i>k </i>+ 2)log <i>k</i> + 1 + 2(<i>n </i>– <i>k </i>– 1)log <i>k</i>))<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:1.0in;
+margin-bottom:12.0pt;margin-left:1.0in;text-align:center;line-height:115%'><span
+lang=PT-BR style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028;mso-ansi-language:PT-BR'>≈ <span
+class=GramE><i>O</i>(</span><i>n</i> log <i>k</i>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Similar to part (a), the latter
+part of the algorithm is decreased in running time by increasing <i>k</i>,
+whereas the former part is increased, so <i>k</i> can be treated as a constant,
+so the overall running time is primarily dependent on the total number of
+elements being sorted.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Design an efficient algorithm
+to find the longest path in a directed acyclic graph.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>We consider a DAG called <i>G</i>
+= {<i>V</i>,<i>E</i> } with vertex list <i>V</i> and edge list <i>E</i> that
+contains edge objects with source and destination, as well as weight if given, where
+|<i>V</i>| = <i>n</i> and |<i>E</i>| = <i>m</i>. We also consider a requested
+source <i>v’</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Algorithm:</span></b><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'><o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>1. Create a
+2–d adjacency list representation for <i>G</i> called <i>A</i>: for each edge <i>e</i>
+in <i>E</i>, with source <i>e<sub>1</sub></i> , destination <i>e<sub>2</sub></i>
+, and weight <i>w</i> (if it exists, assigning <i>w</i> = 1 otherwise),
+creating the sub–list for <i>e<sub>1</sub></i> if necessary, store a duple
+object containing <i>e<sub>2</sub></i> and <i>w</i> in <i>e<sub>1</sub></i>‘s
+sub–list <i>A</i>[<i>e<sub>1</sub></i>] (~<i>n </i>+ <i>m</i> steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>2. Create a
+topological sorting of <i>G</i> in a stack called <i>S</i>: for each node <i>A</i>[i],
+perform a recursive DFS on its neighbors using the information in row <i>A</i>[i],
+and push a copy of <i>A</i>[i] onto <i>S</i> once the DFS completes. For every
+node pushed onto <i>S</i> in this way, the DFS can be skipped, so attach a
+“pushed t/f” value to each <i>A</i>[i] so that it is only visited once (~<i>n</i>
+steps). <o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>3. Initialize
+a distances list <i>D</i> of length <i>n</i> (~<i>n</i> steps) such that every
+value in <i>D</i> is a default “lower than the lowest weight” value (such as –1000
+or –∞) except the index of <i>v’</i>, which is instead initialized to 0 (~<i>n</i>
+steps). Then for every node referenced by <i>S</i>, starting at the top,
+process every neighbor via indexing <i>A</i> and updating every matching
+distance in <i>D</i> by comparing the current neighbor distance and the current
+source distance: if <i>D</i>[neighbor] &lt; <i>D</i>[current] + weight(current,neighbor),
+then <i>D</i>[neighbor] becomes this sum (~<i>n </i>+ <i>m</i> steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>4. After
+step 3, we are left with <i>D</i>, a list of the longest distances from <i>v’</i>
+to every node (ranging from either the default minimum described earlier or 0
+to the longest distance), so the length of the longest path in the graph from <i>v’</i>
+to any node is simply the max of <i>D</i>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Explanation:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>This algorithm is designed with
+more prep work than would normally be necessary for a shortest–path algorithm,
+but as explained in step 4, it provides a complete list of longest path lengths
+by modifying the cost function of the standard shortest path algorithm for
+DAGs. There are no inner loops that blow up the run time, and every set of
+steps is bounded either by <i>n </i>+ <i>m</i> or <i>n</i>, so after summing
+all of the steps, the run time is bounded above by <i>O</i>(<i>n </i>+ <i>m</i>),
+linear time.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>You’re helping some security
+analysts monitor a collection of networked computers...</span></b><span
+style='font-size:11.0pt;line-height:115%;font-family:"Times New Roman",serif;
+color:#183028'> </span><b><span style='font-size:14.0pt;line-height:115%;
+font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>tracking
+the spread of an online virus. There are n computers in the system, call them <i>C<sub>1
+</sub></i>, <i>C<sub>2 </sub></i>, ... , <i>C<sub>n</sub></i>. You are given a
+trace indicating the times at which pairs of computers communicated. The trace
+consists of <i>m</i> triples (<i>C<sub>i </sub></i>, <i>C<sub>j </sub></i>, <span
+style='mso-spacerun:yes'> </span><span class=SpellE><i>t<sub>k</sub></i></span>)
+that indicate that <i>C<sub>i</sub></i> and <i>C<sub>j</sub></i> communicated
+at time <span class=SpellE><i>t<sub>k</sub></i></span><i><sub> </sub></i>. At
+this time, a virus could have spread from <i>C<sub>i</sub></i> to <i>C<sub>j </sub></i>,
+or from <i>C<sub>j</sub></i> to <i>C<sub>i</sub></i>.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>We assume that the trace holds
+the triples sorted in order by time. For simplicity, we assume that each pair
+of computers communicates at most once over the time of the trace. Also, it is
+possible to have pairs (<i>C<sub>s </sub></i>,<i>C<sub>j </sub></i>, <span
+class=SpellE><i>t<sub>k</sub></i></span>) and (<i>C<sub>t </sub></i>, <i>C<sub>j
+</sub></i>, <span class=SpellE><i>t<sub>k</sub></i></span>); this would
+indicate that <i>C<sub>j</sub></i> opened connections to both <i>C<sub>s </sub></i>and
+<i>C<sub>t </sub></i>at time <span class=SpellE><i>t<sub>k</sub></i></span><i><sub>
+</sub></i>, allowing a virus to spread in any way among the 3 machines. There’s
+nothing special about 3 here – there might be 4 or 10 or however many connections
+open at the same time, allowing a virus to spread in any way among all of them.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>We would like to answer
+questions of the following form: if a virus was introduced to <i>C<sub>i</sub></i>
+at time <i>x</i>, could it have spread to <i>C<sub>j</sub></i> at time <i>y</i>?
+That is, is there a sequence of communications that could have led from the
+virus moving from <i>C<sub>i</sub></i> to<i> C<sub>j</sub></i>?</span></b><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:#183028'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Design an algorithm that, given
+as input a collection of (sorted) trace data and a virus query, gives a yes/no
+answer for the query. The algorithm should run in time <i>O </i>(<i>m + n</i>)</span></b><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>. <b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Algorithm:<o:p></o:p></span></b></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>1. Scan the
+trace data and discard all trace elements until the first timestamp at or after
+the virus introduction time is encountered. Once the time at or after the virus
+introduction time is encountered, save it in a variable <i>t</i> (<i>m </i>– <i>c
+</i>+ 1 steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>2. Create
+and initialize an array <i>A</i> that can be indexed by the computer number and
+mark the initially infected computer and mark all others as uninfected (<i>n</i>
+steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>3. While the
+time encountered in the trace data matches <i>t</i>, treat the two computers in
+each trace element as two nodes and create a graph <i>G</i> (adjacency list)
+using every trace element that matches the current time. Once you encounter a
+new time, save it in <i>t</i> and stop accepting input for the moment (<i>n </i>+
+<i>m </i>+ 1 steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>4. Perform a
+BFS on <i>G</i> repeatedly to find and create connected components. For each
+component, saved in a simple array, check each computer (node) via constant
+time access to <i>A</i> whether <u>any</u> computer in that component is infected,
+and if so, update <i>A</i> to reflect that <u>every</u> computer in that
+component is now infected. This check is performed for every computer, which
+are themselves present in only one component, regardless of the number of
+components (<i>m </i>– <i>d</i><sub>i</sub> steps).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>5. Repeat
+steps 3 and 4 until one of 3 outcomes: the originally requested computer to
+find a path to has been positively identified in step 4 as infected OR the
+trace input runs out OR the time <span class=SpellE><i>t</i></span> has reached
+or exceeded the time limit originally given. Thus, either the 1<sup>st</sup>
+outcome occurs, resulting in a “yes” or one of the other 2 outcomes occur,
+resulting in a “no” ( <i>m </i>– (<i>m </i>– <i>c</i>) = <i>c</i> steps ).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Explanation:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>The algorithm is designed to
+reach an absolute outcome, so it will always produce the requested yes/no
+answer as explained in step 5. The steps involving creating the infection array
+<i>A</i> and updating it are bound by <i>n</i>, since a computer can only be
+infected once. The steps involving creating graphs from the trace data and
+creating connected components are bound by <i>m</i>, since there are a constant
+number of steps performed for each trace element (graph edge), and the <u>total</u>
+number of trace elements is <i>m</i>. All other steps performed are either
+constant time or directly based on either the number of computers or the number
+of trace elements, and there are no inner loops that would cause a proportional
+increase in run time, so this is a linear time algorithm bounded above by <i>O</i>(<i>m
+</i>+ <i>n</i>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Giles has asked Buffy to
+optimize her procedure for nighttime patrol of Sunnydale. (This takes place
+sometime in Season 2.) Giles points out that proper slaying technique would
+allow Buffy to traverse all of the streets of Sunnydale in such a way that she
+would walk on each side of each block, exactly once.</span></b><b><span
+style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+color:#183028'> </span></b><b><span style='font-size:14.0pt;line-height:115%;
+font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>Buffy
+now has slayer homework: how can it be done?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Assumptions about Sunnydale: we
+assume that Sunnydale is not some kind of multi–level city and that any
+elevations can be “flattened out” into a 2–dimensional road map that can be
+abstracted as an unweighted, undirected, connected graph. The roads in
+Sunnydale are the edges of the graph and the intersections (4–way and 3–way)
+and <span class=SpellE>cul</span>–de–sacs are the nodes of the graph.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Thus, it becomes Buffy’s job to
+traverse the entire graph, visiting every edge exactly once so that she can
+take an exactly reversed path to travel the “other side” for the second time. For
+any unweighted, undirected, connected graph, there certainly exists a path to
+every <u>node</u> exactly once because of the existence and operation of the
+DFS traversal algorithm, so to start with, we can perform this search with
+dynamic programming starting at any node to create most of the journey. While
+visiting every node, <u>treat the recursive call as walking “one side” on a
+street, and treat the eventual return as walking “the other side” of the street</u>.
+This provides the bulk of a forward path and a reverse path to traverse every
+edge. The only issue is that in the normal operation of DFS with dynamic
+programming, the search function is only called on nodes that have not been
+visited, so there are edges that would typically be skipped so that the nodes
+themselves are only visited once. However, in our real–world scenario, <u>we
+can simply instruct Buffy that, for every node (in these cases, they would be
+intersections) that has already been visited, she needs to walk to it and
+immediately return</u> such that although there may be <u>intersections</u>
+that will be visited multiple times, every <u>street</u> is walked down in both
+directions exactly once. In an abstract sense, this creates a path that
+includes all of the edges that are normally excluded when using DFS to create the
+DFS tree via the standard creation of an adjacency list or matrix.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Suppose instead that we are
+concerned with the length of the longest edge between the source and every node
+in a graph. That is, the “bottleneck” of a path is defined to be the length of
+the longest edge in the path. Design an efficient algorithm to solve this
+single source smallest bottleneck problem; i.e. find the paths from a source to
+every other node such that each path has the smallest possible bottleneck.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Algorithm (modified
+Djikstra’s):<o:p></o:p></span></b></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>1. Assume we
+have an adjacency list representation called <i>A</i> that includes a leftmost
+column to be used for “visited/unvisited”. Also create a 1–dimensional array <i>B</i>
+that is parallel to <i>A</i> and assign a default “high” value (such as 10,000
+or infinity) for every node except for the requested source node, which should
+be marked as 0. The values in <i>B</i> represent the path cost, which in this
+case is the smallest maximum weight for all paths from the source node. Also
+create an empty min–heap <i>Q</i> to use as a priority queue that accepts
+objects that use max weight as a key and node index as a value and insert the
+source node with weight zero into <i>Q</i>. Set current node to the source
+node.<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>2. Perform
+extract_min (and heapify) on <i>Q</i> and consider this the current node. Use
+the current node to access <i>A</i> to find its <u>unvisited</u> neighbors. For
+each neighbor, calculate the following: min (lowest max distance from <i>B</i>
+for this neighbor, distance from the current node to this neighbor). This
+minimum value replaces the value in <i>B</i>, so an update occurs if the min is
+lower than what is currently held in <i>B</i>. Create a <i>Q</i> object from
+this minimum value and the neighbor node and insert it into <i>Q</i> (and
+heapify).<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>3. When all
+of the unvisited neighbors of the current node have been processed, mark the
+current node as visited in <i>A</i>.<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>4. Repeat
+steps 2 and 3 until <i>Q</i> is empty.<o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:1.0in;margin-bottom:
+12.0pt;margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;
+line-height:115%'><span style='font-size:14.0pt;line-height:115%;font-family:
+"Arial",sans-serif;mso-fareast-font-family:DengXian;color:#183028'>5. We are
+left with B, an array that is parallel to A and thus for each node A[i], then
+B[i] is the requested shortest bottleneck for any path from A[source] to A[i].<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Explanation:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>This algorithm works because it
+explores nodes with the same style of exploration as Djikstra’s algorithm with
+only a change in the prioritization of which node to choose as “current”
+(decided by the heap) and how that prioritization is calculated (smallest
+bottleneck instead of lowest path cost). Since all the implementation steps are
+identical to Djikstra’s with the exception of the cost function (which is
+constant–time, like Djikstra’s), the run time is essentially identical as well,
+so excluding the time it takes to create the graph, it is bounded above by <i>O</i>(<span
+class=SpellE><i>m</i>log</span> <i>n</i>).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:.5in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><b><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Consider the shortest paths
+problem in the special case where all edge costs are non–negative integers.
+Describe a modification of Dijkstra’s algorithm that works in time O( |<i>E </i>|
++ |<i>V</i> |<i>m</i> ), where <i>m</i> is the maximum cost of any edge in the
+graph.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0in;margin-bottom:12.0pt;
+margin-left:1.0in;text-align:justify;text-justify:inter-ideograph;line-height:
+115%'><span style='font-size:14.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:DengXian;color:#183028'>Since the edge costs are all
+non–negative integers, the structure to store nodes and the structure to store
+distances can be combined into a list of lists (buckets). So then to implement
+this change, instead of creating a min–heap in which to store nodes, a standard
+integer–indexed list, say it’s called <i>L</i>, can be created with size <i>m </i>+
+1. Then, whenever a minimum cost is calculated for a neighbor to the current
+node, the neighbor’s identifier can be inserted at the end of a linked list at
+the position in <i>L</i> that exactly matches that minimum cost value,
+essentially using the cost as an index for constant–time insertion, and if
+insertion had already occurred, determining whether a node should be moved to a
+lower bucket and which bucket to move it to is also constant–time. This also
+creates the advantage that, provided we keep track of where in <i>L</i> our
+last node was removed from, we can simply start scanning <i>L</i> from that
+position to find the next non–empty “bucket” to retrieve our next current node,
+which replaces the “extract_min” operation, so the total number of retrieval
+steps is bounded by the number of “buckets” (<i>m </i>+ 1). Keeping in mind
+that this scheme only allows nodes to either be inserted or moved from greater
+buckets to lower buckets, then the run time can be calculated as follows: there
+is some constant number of steps for every edge and in the worst (impossible)
+case, each node will take some constant number of steps to move into a bucket,
+then be moved left by a number proportional to <i>m</i>, then finally
+discarded. Therefore, the run time for the improved algorithm is bounded by a) <u>the
+total number of edges</u> + b) <u>the number of vertices multiplied by the maximum
+cost of any edge</u>, giving us the desired O(|<i>E</i>| + |<span class=SpellE><i>V</i>|<i>m</i></span>
+).<o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:1.0in;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:right'><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;
+color:#183028'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:1.0in;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:right'><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;
+color:#183028'>Paul A. Morrison<o:p></o:p></span></p>
+
+<p class=MsoNormal align=right style='margin-top:0in;margin-right:1.0in;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:right'><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:DengXian;
+color:#183028'>All Rights Reserved © 2019<o:p></o:p></span></p>
+
+</div>
+
+<div id="Footer">
+    <div id="FooterStrip">
+    </div>
+    <div>
+        <div id="FootRight">
+            <div id="Friends">Friends &amp; Unofficial Sponsors:
+            </div>
+            <p>
+            <a href="https://theycallmezeal.me"><img src="../../images/theycallmezeal.png" style="height: 40px"></a>&nbsp;
+            <a href="http://zombo.com"><img src="../../images/zombocom.jpg" style="height: 40px"></a>&nbsp;
+            <a href="https://mddayrit.weebly.com/"><img src="../../images/marc.png" style="height: 40px"></a>
+            </p>
+            <p>
+            <a href="https://csgw.com"><img src="https://img1.wsimg.com/isteam/ip/611c6cfe-9641-4aef-a5fa-1c304346f90c/logo/a05930ab-0d28-4db6-af21-489683c70d78.tif/:/rs=h:100" style="height: 40px;"></a>&nbsp;
+            <a href="https://jackbowden.me"><img src="../../images/jb.ico" style="height: 40px"></a>
+            </p>
+        </div>
+        
+        <div id="FootLeft">
+            <div style="float:left;margin: 15px 0 5px 20px;">
+                <a href="https://www.wm.edu"><img src="../../images/wmlogo.png" style="width:80px">
+                    </a>
+            </div>
+            <div style="margin: 15px 0 5px 120px;">
+                <a href="https://www.tncc.edu"><img src="https://tncc.edu/sites/all/themes/tncc2014/images/thomas_nelson_vlogo.svg" style="width:105px;opacity:.85;">
+                    </a>
+            </div>
+        </div>
+        
+        <div id="CopyrightContainer">
+            <a href="#Top">
+                <span id="ToTheTop">Back to Top</span>
+            </a>
+            
+            <span id="Copyright">All Rights Reserved <span style="font-size:100%">©</span> 2019</span>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

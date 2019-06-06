@@ -1,44 +1,72 @@
+/*
+ PALETTE:
+ White: #f2f0fa
+ Gold: #B9975B
+ Bright Gold: #F0B323
+ Dark Green: #183028
+ Medium Green: #115740
+ Light Green: #789F90
+ Slate: #5B6770
+ Silver: #D0D3D4
+ Patina: #00B388
+ Brick: #E56A54
+ */
 
-#TOPSECTION {
+#Header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: +1;
 }
-body{
+body {
     font-family:    Avenir,sans-serif;
-    font-size: small;
+    font-size: 10.5pt;
     color: #115740;
     background-color: #f2f0fa;
+    margin-bottom: -10px;
 }
 #TopBar {
-    min-width: 575px;
     height: 10px;
-    margin: -8px -8px 0px -8px;
+    margin: -12px -10px 0px -10px;
     background-color:   #B9975B;
     background-image: linear-gradient(to right, #183028, #789F90, #5B6770);
+    opacity: .93;
 }
 
 /* UPPER BANNER */
 .BannerUpper {
-    margin: 0px -8px 0px -8px;
-    min-width: 575px;
-    background-image: linear-gradient(to right, #f2f0fa, #f2f0fa);
+    margin: 0px -10px 0px -10px;
+    background-color: #f2f0fa;
+    opacity: .93;
 }
 
-@media (min-width: 800px){
-    #UpLeft {
-        font-family: "Avenir Next", inherit;
-        padding: 20px 0px 15px 80px;
-        font-size: 230%;
-        font-weight: 700;
-        border-bottom: 4px solid #f2f0fa;
-    }
+#UpLeft {
+    line-height: 1em;
+    display: inline-block;
+    font-family: "Avenir Next", inherit;
+    font-size: 230%;
+    font-weight: 700;
+    margin: 13px 0 5px 80px;
+    height: 35px;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: border-bottom ease .2s;
+    transition: border-bottom ease .2s;
+
+
 }
-@media (max-width: 799px){
+@media (max-width: 899px){
     #UpLeft {
-        padding: 15px 0px 10px 25px;
-        font-size: 180%;
+        line-height: 1em;
+        display: inline-block;
+        font-family: "Avenir Next", inherit;
+        font-size: 170%;
         font-weight: 600;
+        margin: 10px 0 5px 20px;
+        height: 25px;
+        border-bottom: 3px solid #f2f0fa;
+        -webkit-transition: border-bottom ease .2s;
+        transition: border-bottom ease .2s;
+
     }
 }
 
@@ -50,36 +78,34 @@ body{
     color: inherit;
     text-decoration: none;
 }
-#UpLeft a {
-    border-bottom: 4px solid #f2f0fa;
-    -webkit-transition: border-bottom ease .25s;
-    transition: border-bottom ease .2s;
-}
-#UpLeft a:hover {
-    border-bottom: 4px solid;
+#UpLeft:hover {
+    border-bottom: 3px solid;
 }
 
-@media (min-width: 800px) {
-    #UpRight {
-        font-size:      125%;
-        float:          right;
-        text-align:     right;
-        padding:  29px 80px 0px 0px;
-    }
+#UpRight {
+    font-size:      125%;
+    float:          right;
+    text-align:     right;
+    padding:  18px 80px 0px 0px;
 }
-@media (max-width: 799px) {
+@media (max-width: 899px) {
     #UpRight {
-        font-size:      100%;
-        float: right;
-        padding:  23px 25px 0px 0px;
+        font-size:      95%;
+        padding:  14px 25px 0px 0px;
     }
 }
 #UpRight a {
     display: inline-box;
-    margin-right: 12px;
+    margin-left: 12px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: ease .2s;
+    transition: border-bottom ease .2s;
+
 }
-#git a {
-    margin-right: 0px;
+@media (max-width: 899px) {
+    #UpRight a {
+        margin-left: 6px;
+    }
 }
 #UpRight a:link{
     color:inherit;
@@ -90,45 +116,41 @@ body{
     text-decoration: none;
 }
 #UpRight a:hover {
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #115740;
 }
 
 /* END OF UPPER BANNER */
 
 
-
 /* LOWER BANNER */
 .BannerLower {
-    min-width: 575px;
     color: #f5f5ff;
     background-color: #789F90;
     background-image: linear-gradient(to right, #183028, #789F90, #5B6770);
-    padding: 15px 0px 15px 0px;
-    margin: 0px -8px 0px -8px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px -10px 0px -10px;
+    opacity: .93;
 }
 
-@media (min-width: 800px){
+#LowLeft {
+    padding-left: 79px;
+}
+@media (max-width: 899px){
     #LowLeft {
-        padding-left: 79px;
-    }
-}
-@media (max-width: 799px){
-    #LowLeft {
-        font-size: 0em;
+        display: none;
     }
 }
 
 
-@media (min-width: 800px) {
-    #LowRight {
-        float:          right;
-        text-align:     left;
-        padding-right:  80px;
-    }
+#LowRight {
+    float:          right;
+    text-align:     left;
+    padding-right:  80px;
 }
-@media (max-width: 799px) {
+
+@media (max-width: 899px) {
     #LowRight {
-        font-size:      0em;
+        display: none;
     }
 }
 
@@ -140,78 +162,188 @@ body{
     color:inherit;
     text-decoration: none;
 }
+#LowRight a {
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom ease .2s;
+    transition: border-bottom ease .2s;
+
+}
 #LowRight a:hover{
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #f2f0fa;
 }
 /* END OF LOWER BANNER */
 
 
 #BotBar {
-    min-width: 575px;
-    height: 7px;
-    margin: 0px -8px 0px -8px;
+    height: 6px;
+    margin: 0px -10px 0px -10px;
     background-color:   #B9975B;
     background-image: linear-gradient(to right, #B9975B, #F0B323);
 }
-@media (min-width: 800px) {
-    .leftbar {
-        float: left;
-        background-color:#B9975B;
-        width: 250px;
-        margin: 0px 0px 0px -8px;
-    }
-}
-@media (max-width: 799px) {
-    .leftbar {
-        float: left;
-        background-color: #B9975B;
-        width: 160px;
-        margin: 0px 0px 0px -8px;
-    }
+
+.LeftBar {
+    float: left;
+    margin: 6px 0px 0px -11px;
+    width: 15%;
+    background: transparent;
+    min-width: 100px;
 }
 
 
-.leftButton {
-    height: 50px;
-    float:right;
-    padding: 15px 20px 13px 13px;
+
+#Active {
+    background-image: linear-gradient(to right, #B9975B, #f2f0fa, #f2f0fa);
+    padding: 30px 0px 27px 0px;
+    text-align: right;
     font-size: 130%;
     font-style: italic;
-    font-family: Avenir;
-    text-align: right;
-    line-height: 1.3em;
-    width: 175px;
+    font-family: Avenir, sans-serif;
+    font-weight: 600;
+    width: 95%;
+    border-bottom: 2px solid #f2f0fa;
+    border-top: 2px solid #f2f0fa;
+}
+.LeftButton {
+    background-color: #B9975B;
+    background-image: linear-gradient(to right, #B9975B, #F0B323);
+    background-repeat: no-repeat;
+    background-position: 160px;
+    padding: 27px 0px 27px 0px;
+    font-size: 130%;
+    font-style: italic;
+    font-family: Avenir, sans-serif;
+    font-weight: 600;
     text-decoration: none;
     color: #115740;
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+    border: 2px solid #f2f0fa;
+    transition: background-position ease .3s;
 }
-@media (max-width: 799px) {
-    .leftButton {
-        width: 125px;
+@media (max-width: 899px) {
+    .LeftButton {
+        background-position: 110px;
     }
 }
 
-a:hover .leftButton{
-    background-image: linear-gradient(to right, #B9975B, #F0B323);
+@media (max-width: 899px) {
+    .LeftButton, #Active {
+        font-size: 112%;
+        font-weight: 700;
+    }
 }
 
-@media (min-width: 800px) {
-    .maincontent {
-        margin: 0px 0px 0px 255px;
-        padding: 55px 65px 100px 55px;
+.ButtonSpan {
+    display: inline-block;
+    text-align: right;
+    width: 85%;
+    transition: width ease .25s;
+}
+.LeftBar a:link,  .LeftBar a:visited {
+    text-decoration: none;
+}
+a:hover .LeftButton {
+    background-position: 0;
+}
+a:hover .LeftButton .ButtonSpan {
+    width: 92%;
+}
+#LeftClose {
+    background-image: linear-gradient(#B9975B, #B9975B, #f2f0fa);
+    height: 30px;
+}
+
+
+#MainContent {
+    margin: 95px 20% 0px 20%;
+    font-size: 120%;
+    text-align: justify;
+    line-height: 1.4em;
+    min-height: 500px;
+}
+@media (max-width: 899px) {
+    #MainContent {
         font-size: 110%;
         text-align: justify;
-        line-height: 1.4em;
     }
 }
-@media (max-width: 799px) {
-    .maincontent {
-        min-width: 350px;
-        margin: 0px 0px 0px 150px;
-        padding: 30px 20px 100px 40px;
-        font-size: 100%;
-        text-align: justify;
-        line-height: 1.4em;
+#MainContent h1 {
+    font-size: 160%;
+    font-weight: 800;
+}
+#MainContent h2 {
+    font-size: 135%;
+}
+#MainContent h3 {
+    font-size: 115%
+}
+#MainContent a:link, #MainContent a:visited {
+    color: inherit;
+}
+#FooterStrip {
+    margin-top: 50px;
+    height: 6px;
+    background-image: linear-gradient(to right, #B9975B, #F0B323);
+}
+#Footer {
+    color: #f2f0fa;
+    background-image: linear-gradient(#587F70, #115740, #183028);
+    margin: 0px -10px -10px -10px;
+    height: 162px;
+}
+#Footer a:link {
+    color: #f2f0fa;
+    text-decoration: none;
+}
+#Footer a:visited {
+    color: #f2f0fa;
+    text-decoration: none;
+}
+#FootLeft {
+    margin: 15px 15px 15px 10px;
+    float: left;
+}
+.FooterLinks {
+    margin-right: 20px;
+}
+#FootRight{
+    font-size: 80%;
+    float: right;
+    width: 230px;
+    margin-top: 13px;
+}
+@media (max-width: 600px){
+    #FootRight, #FootLeft{
+        display: none;
     }
 }
 
+#CopyrightContainer {
+    font-size: small;
+    margin: 0px 0 0 50%;
+    width: 20px;
+    height: 140px;
+}
+#ToTheTop {
+    display: inline-block;
+    position: relative;
+    font-size: 75%;
+    text-align: center;
+    width: 80px;
+    left: -40px;
+    padding: 5px 0 5px 0;
+    background-image: radial-gradient(#115740,#587F70);
+    border-left: #B9975B 2px solid;
+    border-right: #B9975B 2px solid;
+    border-bottom: #B9975B 2px solid;
+    border-radius: 0 0 10px 10px;
+}
 
+#Copyright {
+    display: inline-block;
+    position: relative;
+    left: -50px;
+    font-size: 20%;
+    width: 111px;
+    margin-top: 460%;
+}

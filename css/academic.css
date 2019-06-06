@@ -1,0 +1,89 @@
+
+
+#BackToAcademic {
+    position: fixed;
+    left: 0px;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 88%;
+    height: 45px;
+    width: 65px;
+    background-image: linear-gradient(to right, #183028, #11463d);
+    padding: 10px 10px 5px 10px;
+    border-radius: 0 0 10px 0;
+    opacity: .9;
+    border-bottom: solid 3px #B9975B;
+    border-right: solid 3px #B9975B;
+}
+#AcadLink:link, #AcadLink:visited  {
+    color: #f2f0fa;
+    text-decoration: none;
+}
+#BackToAcademicText{
+    display: inline-block;
+}
+#AcadLink:hover #BackToAcademic #BackToAcademicText {
+    border-bottom: 2px solid #f2f0fa;
+}
+
+.PapersTopBar {
+    height: 30px;
+    background-image: linear-gradient(#1a6049, #115740);
+    border-radius: 20px 20px 0 0;
+    margin-bottom: -1px;
+}
+.PapersContainer {
+    line-height: 1.7em;
+    display: inline-block;
+    background-color: #f2f0fa;
+    border-radius: 10px;
+    margin: 10px 25px 10px 25px;
+}
+
+.PapersEntry {
+    background-color: #f2f0fa;
+    display:inline-block;
+    font-family: Arial,serif;
+    font-style: italic;
+    font-size: 130%;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-transition: background-color ease .3s;
+    transition: background-color ease .3s;
+
+}
+.PapersContainer a .PapersEntry {
+    color: #115740
+}
+.PapersContainer a:hover .PapersEntry{
+    background-color: #F0B323;
+}
+
+.PapersEntryAddlInfo {
+    display: inline-block;
+    padding-top: 10px;
+    line-height: 1.5em;
+    font-family: Avenir,sans-serif;
+    font-size: 60%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.PapersMidBar1 {
+    height: 25px;
+    background-image: linear-gradient(#115740, #186049);
+}
+
+.PapersMidBar2 {
+    height: 25px;
+    background-color: #115740;
+        
+}
+#PapersBotBar {
+    height: 25px;
+    background-image: linear-gradient(#115740, #186049);
+    border-radius: 0 0 20px 20px;
+    margin-top: -3px;
+}
+
