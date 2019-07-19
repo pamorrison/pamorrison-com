@@ -199,7 +199,7 @@ body {
     font-style: italic;
     font-family: Avenir, sans-serif;
     font-weight: 600;
-    width: 95%;
+    width: 90%;
     border-bottom: 2px solid #f2f0fa;
     border-top: 2px solid #f2f0fa;
 }
@@ -215,7 +215,7 @@ body {
     font-weight: 600;
     text-decoration: none;
     color: #115740;
-    width: 100%;
+    width: 96%;
     border-radius: 0 15px 15px 0;
     border: 2px solid #f2f0fa;
     transition: background-position ease .3s;
